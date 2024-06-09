@@ -1,0 +1,84 @@
+
+.vars{
+    --About: clamp(2.1875rem, 2.188rem + ((1vw - 0.2rem) * 0.878), 3rem);
+    --family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font :  font-size: clamp(1.6rem, 1.3rem + ((1vw - 0.2rem) * 0.216), 1.5rem);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --color2:#f77707
+}
+
+.ContainerA h2 {
+    font-family: var(--family)!important;
+    font-size: var(--About)!important;
+}
+
+.ContainerA-text{
+    font-size: var(--font);
+}
+
+.ContainerA {
+    height: 35vh;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondA-box{
+    background-color: black;
+}
+
+.secondA-box .heading {
+    color: #f77707;
+    margin-top: 10%;
+    padding: 5%;
+    font-weight: 300px;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15%;
+    font-size: clamp(1.5rem, 1.5rem + ((1vw - 0.2rem) * 0.541), 2rem);
+   
+}
+
+.cards-containerA {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cardsA {
+    margin-bottom: 2%;
+    flex-basis: calc(30.33% - 20px); /* Adjust the width of each card */
+    max-width: calc(30.33% - 20px); /* Set maximum width if needed */
+    max-height: 20%; /* Adjust the maximum height */
+    border-radius: 8px;
+    color: white;
+    opacity: 80;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    padding: 32px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.cardsA:hover {
+    transform: scale(1.05);
+}
+
+.cardsA .title {
+    color: #f77707;
+    font-size: clamp(1.3rem, 1.5rem + ((1vw - 0.2rem) * 0.541), 2rem);
+}
+
+.cardsA .description{
+    font-size: 1.2rem;
+    color: white;
+}
+@media screen and (max-width: 760px) {
+    .cardsA {
+        flex-basis: 100%; /* Make each card take up 100% of the width */
+        max-width: 100%; /* Remove maximum width */
+    }
+}
