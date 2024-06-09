@@ -1,0 +1,165 @@
+header{
+    line-height: 1.1;
+    padding: 10%;
+}
+.First-heading{
+    display: flex;
+    justify-content: center;
+}
+header div p{
+    padding: 1%;
+    border-radius: 8px;
+    font: weight 300px; ;
+    background-color: #f3f4f6;
+    display: flex;
+}
+.h1-container{
+    padding: 7%;
+}
+header div h1{
+    font-size: 3.25rem;
+    padding: 1%;
+    margin: -6%;
+}
+.image-container{
+    margin-top: -7%;
+    display: flex;
+    padding: 5%;
+    justify-content: space-evenly;
+    gap: -1%;   
+}
+.image {
+    width: 30%; /* Adjust the width as needed */
+    margin-bottom: 2%;
+}
+.image:hover{
+    transform: scale(1.1);
+}
+.tag{
+    display: flex;
+    justify-content: space-between;
+}
+.tag h1{
+    font-size: 3.25rem;
+    padding: 8%;
+}
+.tag div{
+    display: flex;
+    align-items: flex-end;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 3%;
+}
+
+.cards {
+    margin-bottom: 2%;
+    flex-basis: calc(30.33% - 20px); /* Adjust the width of each card */
+    max-width: calc(30.33% - 20px); /* Set maximum width if needed */
+    max-height: 30%; /* Adjust the maximum height */
+    border-radius: 8px;
+    color: white;
+    opacity: 80;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+    border : 0.01px solid black;
+    transition: transform 0.3s;
+    padding: 2%;
+    text-align: left;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.cards .title {
+    color: orange;
+    font-size: 1.7rem;
+    font-weight: 1rem;
+}
+.cards .cards-heading{
+    color: black;
+    font-size: 1rem;
+}
+.cards .description{
+    font-size: 1rem!important;
+    color: black!important;
+}
+
+.last-container{
+    background-color: #f3f4f6;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last-container img{
+    border-radius: 50%;
+}
+.last-container div{
+    display: flex;
+    background-color: white;
+    padding: 4%;
+    width: 80%;
+}
+.last-container div ul{
+    list-style:none;
+    text-align: left;
+    
+}
+.last-container div button{
+    background-color: orange;
+    border-radius: 8px;
+    padding: 2%;
+    display:flex;
+    align-items: center;
+    height: 7vh;
+    width:30vh;
+    justify-content: center;
+    margin-left: 40%;
+    color: white;
+    font-weight: 900;
+    border: none;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:760px) {
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        margin : 2%;
+        
+    }
+    .image{
+        width:100%;
+        margin-top: 2%;
+        border-radius: 5px;
+    }
+    .tag{
+        display: flex;
+        flex-direction: column;
+    }
+    .tag div{
+        padding: 2%;
+    }
+    .cards {
+        flex-basis: 100%; /* Make each card take up 100% of the width */
+        max-width: 100%; /* Remove maximum width */
+        margin-bottom: 2%;
+    }
+    .last-container div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .last-container div button {
+        margin-left: 0;
+        margin-top: 10px; /* Add some space between the list and the button */
+    }
+        
+}

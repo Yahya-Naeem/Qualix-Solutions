@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3%;
+    padding: 1.5%;
+    background-color: #444!important;
+}
+.Nav-name {
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+}
+.Nav-name li {
+    margin: -15px 0; /* Adjust the value to control the vertical spacing */
+}
+.Nav-name p{
+    font-size: 0.68rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Change background color of links on hover */
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 10px 20px; 
+    display: inline-block; 
+}
+
+  
